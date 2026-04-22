@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mateus — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 2rem;
+      flex-direction: column;
+    }
+    .lang-selector h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .lang-options {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .lang-options a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 60px;
+      border: 2px solid var(--accent);
+      border-radius: 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .lang-options a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main class="lang-selector">
+    <h1>Mateus — Portfolio</h1>
+    <div class="lang-options">
+      <a href="en/index.html">English</a>
+      <a href="pt/index.html">Português</a>
+    </div>
+  </main>
+
+  <script>
+    (function() {
+      var lang = navigator.language || navigator.userLanguage;
+      if (lang && lang.toLowerCase().startsWith('pt')) {
+        window.location.replace('pt/index.html');
+      } else {
+        window.location.replace('en/index.html');
+      }
+    })();
+  </script>
+</body>
+</html>
