@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" role="img" aria-label="rSoccer, arXiv 2021: RL framework for robot soccer">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" fill="url(#g)"/>
+  <g fill="none" stroke="#fff1f2" stroke-width="3" opacity="0.9">
+    <rect x="110" y="26" width="180" height="108" rx="4"/>
+    <line x1="200" y1="26" x2="200" y2="134"/>
+    <circle cx="200" cy="80" r="22"/>
+    <rect x="110" y="58" width="16" height="44"/>
+    <rect x="274" y="58" width="16" height="44"/>
+  </g>
+  <g stroke-linecap="round">
+    <circle cx="160" cy="60" r="9" fill="#fff1f2" stroke="none"/>
+    <circle cx="240" cy="102" r="9" fill="#fff1f2" stroke="none"/>
+    <circle cx="200" cy="80" r="5" fill="#1c1917" stroke="none"/>
+  </g>
+  <path d="M370 0 L400 0 L400 30 Z" fill="#fff1f2" opacity="0.25"/>
+  <path d="M370 0 L400 30" stroke="#fff1f2" stroke-width="2" opacity="0.4"/>
+</svg>

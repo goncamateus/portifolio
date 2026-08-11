@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" role="img" aria-label="DLN-jax: low-light image enhancement">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="55%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#fda4af"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" fill="url(#g)"/>
+  <g transform="translate(200,80)" fill="none" stroke="#fff1f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-60" y="-38" width="120" height="76" rx="8" opacity="0.95"/>
+    <circle cx="-18" cy="6" r="16" opacity="0.95"/>
+    <path d="M-60 30 L-24 -2 L4 20 L28 -10 L60 22" opacity="0.7"/>
+    <g stroke-width="4" opacity="0.9">
+      <line x1="42" y1="-58" x2="42" y2="-74"/>
+      <line x1="60" y1="-48" x2="72" y2="-58"/>
+      <line x1="68" y1="-30" x2="84" y2="-30"/>
+      <line x1="60" y1="-12" x2="72" y2="-2"/>
+    </g>
+    <circle cx="42" cy="-30" r="14"/>
+  </g>
+</svg>
