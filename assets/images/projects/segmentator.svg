@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" role="img" aria-label="Segmentator: configuration-driven image and video segmentation">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="160" fill="url(#g)"/>
+  <g fill="none" stroke="#fff1f2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="110" y="34" width="180" height="92" rx="8"/>
+    <path d="M150 100 q10 -34 40 -30 q22 3 26 -20 q4 -18 24 -14" stroke-dasharray="2 10"/>
+    <circle cx="150" cy="100" r="6" fill="#fff1f2" stroke="none"/>
+    <circle cx="190" cy="70" r="6" fill="#fff1f2" stroke="none"/>
+    <circle cx="216" cy="50" r="6" fill="#fff1f2" stroke="none"/>
+    <circle cx="240" cy="36" r="6" fill="#fff1f2" stroke="none"/>
+  </g>
+</svg>

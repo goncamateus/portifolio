@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" role="img" aria-label="mjsoccer: Gymnasium environments for a RoboCup SSL soccer robot in MuJoCo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c0519"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="160" fill="url(#g)"/>
+  <g fill="none" stroke="#fff1f2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="60" y="110" width="280" height="34" rx="4"/>
+    <rect x="110" y="72" width="34" height="34" rx="6" fill="#fff1f2" stroke="none"/>
+    <circle cx="230" cy="94" r="14" fill="none" stroke="#fff1f2"/>
+    <path d="M230 80 l3 6 -3 4 -3 -4z M244 94 l-6 3 -4 -3 4 -3z M230 108 l-3 -6 3 -4 3 4z M216 94 l6 -3 4 3 -4 3z" fill="#fff1f2" stroke="none"/>
+    <path d="M154 88 q30 -10 62 4" stroke-dasharray="2 8"/>
+    <path d="M340 60 v50 M340 60 h-20 M340 70 h-14" />
+  </g>
+</svg>
