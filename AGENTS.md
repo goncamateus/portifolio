@@ -47,3 +47,17 @@
 - All paths relative. From `en/pages/about.html`: `../../css/style.css`, `../index.html`
 - Shared nav/header duplicated in each HTML file. No templating engine.
 - Language toggle in nav links to corresponding page in other language.
+
+## Agent skills
+
+### Issue tracker
+
+Issues tracked in GitHub Issues on `goncamateus/portifolio`, via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`), unmapped. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` + `docs/adr/` at repo root, created lazily by `/domain-modeling`. See `docs/agents/domain.md`.
