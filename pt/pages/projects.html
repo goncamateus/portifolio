@@ -30,6 +30,135 @@
   <main>
     <h1 class="page-title">Projetos</h1>
 
+    <section class="flagship-section">
+      <p class="section-subtitle">Pesquisa → implementação → robô real. Os projetos abaixo, ordenados por relevância para contratação, mostram esse caminho completo, ponta a ponta.</p>
+      <div class="flagship-grid">
+
+        <article class="flagship-card">
+          <div class="flagship-card__header">
+            <h3>DyLam — Ponderação Dinâmica de Recompensas para RL</h3>
+            <span class="flagship-card__venue">AAMAS 2025</span>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Problema</h4>
+            <p>Tarefas de aprendizado por reforço multiobjetivo precisam de vários componentes de recompensa ponderados entre si. Pesos fixos, definidos uma vez antes do treino, tendem a produzir políticas instáveis ou subótimas conforme o treino avança.</p>
+          </div>
+          <div class="flagship-card__section">
+            <h4>O que construí</h4>
+            <ul>
+              <li>Um framework que reponderá dinamicamente os componentes de recompensa durante o treino, em vez de fixá-los previamente</li>
+              <li>Implementação em PyTorch, rastreada e comparada via Weights &amp; Biases</li>
+              <li>Avaliado em Gymnasium/MuJoCo, MO-Gymnasium e no simulador de futebol de robôs rSoccer-gym, próprio da equipe</li>
+            </ul>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Resultado</h4>
+            <p>Revisado por pares e publicado na AAMAS 2025, um dos principais veículos de sistemas multiagente.</p>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Stack</h4>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">Gymnasium</span><span class="tag">MuJoCo</span><span class="tag">MO-Gymnasium</span><span class="tag">Weights &amp; Biases</span>
+            </div>
+          </div>
+          <div class="flagship-card__links">
+            <a href="https://ifaamas.csc.liv.ac.uk/Proceedings/aamas2025/pdfs/p2651.pdf" target="_blank" rel="noopener" class="btn btn--sm">Artigo</a>
+            <a href="https://github.com/goncamateus/dylam" target="_blank" rel="noopener" class="btn btn--sm btn--outline">Código</a>
+          </div>
+        </article>
+
+        <article class="flagship-card">
+          <div class="flagship-card__header">
+            <h3>Planning the Path with RL — Planejamento de Caminho na RoboCup SSL</h3>
+            <span class="flagship-card__venue">arXiv 2024</span>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Problema</h4>
+            <p>Robôs da RoboCup Small Size League precisam de planejamento de caminho/trajetória que seja rápido quando o campo está livre, mas que ainda evite com segurança obstáculos estáticos e móveis quando não está.</p>
+          </div>
+          <div class="flagship-card__section">
+            <h4>O que construí</h4>
+            <ul>
+              <li>Um planejador de caminho baseado em RL, treinado no simulador rSoccer-gym da equipe e rastreado com Weights &amp; Biases</li>
+              <li>Comparado com algoritmos de planejamento de referência em cenários sem obstáculos e com obstáculos únicos/móveis</li>
+              <li>Levado da simulação a testes em robô real (o repositório inclui uma suíte dedicada <code>real_tests/</code>)</li>
+            </ul>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Resultado</h4>
+            <p>Ganho de <strong>60% em tempo</strong> sobre os algoritmos de referência em ambientes sem obstáculos, com desvio de obstáculos dinâmicos demonstrado contra obstáculos móveis.</p>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Stack</h4>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">rSoccer-gym</span><span class="tag">Weights &amp; Biases</span>
+            </div>
+          </div>
+          <div class="flagship-card__links">
+            <a href="https://arxiv.org/abs/2404.15410" target="_blank" rel="noopener" class="btn btn--sm">Artigo</a>
+            <a href="https://github.com/goncamateus/Planning-the-path-with-rl" target="_blank" rel="noopener" class="btn btn--sm btn--outline">Código</a>
+          </div>
+        </article>
+
+        <article class="flagship-card">
+          <div class="flagship-card__header">
+            <h3>VS050 MuJoCo — Simulação para Braço Robótico Industrial</h3>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Problema</h4>
+            <p>Treinar e validar políticas de RL em um braço industrial real de 6 graus de liberdade exige um simulador preciso e rápido antes que qualquer coisa toque o hardware físico.</p>
+          </div>
+          <div class="flagship-card__section">
+            <h4>O que construí</h4>
+            <ul>
+              <li>Uma simulação MuJoCo compatível com Gymnasium do braço DENSO VS050 equipado com garra Robotiq 2F-85</li>
+              <li>Ambientes de tarefa de alcance de pose e pick-and-place, com cinemática, limites de junta e funções de recompensa modelados</li>
+              <li>Um projeto complementar (<code>vs050-mjlab</code>) para treino de RL em simulação em lote de larga escala</li>
+            </ul>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Stack</h4>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">Gymnasium</span><span class="tag">MuJoCo</span>
+            </div>
+          </div>
+          <div class="flagship-card__links">
+            <a href="https://github.com/goncamateus/vs050_mujoco" target="_blank" rel="noopener" class="btn btn--sm btn--outline">Código</a>
+          </div>
+        </article>
+
+        <article class="flagship-card">
+          <div class="flagship-card__header">
+            <h3>Segmentator — Segmentação de Vídeo Guiada por Configuração</h3>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Problema</h4>
+            <p>Começou como uma forma de extrair uma pluma de gás de vídeo termal, quadro a quadro, sem reescrever código toda vez que o detector ou a cadeia de pré-processamento precisasse mudar.</p>
+          </div>
+          <div class="flagship-card__section">
+            <h4>O que construí</h4>
+            <ul>
+              <li>Uma arquitetura de pipeline <code>source → stages → sinks</code>, totalmente descrita em YAML — trocar um detector ou modelo de fundo é uma edição de config, não de código</li>
+              <li>Famílias de estágios de detecção por estrutura, textura e movimento, construídas sobre OpenCV/NumPy</li>
+              <li>Um editor de GUI opcional em PyQt6 com pré-visualização ao vivo de cada estágio e saída, além de instaladores empacotados AppImage/dmg</li>
+            </ul>
+          </div>
+          <div class="flagship-card__section">
+            <h4>Stack</h4>
+            <div class="tag-list">
+              <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">NumPy</span><span class="tag">PyQt6</span><span class="tag">FFmpeg</span>
+            </div>
+          </div>
+          <div class="flagship-card__links">
+            <a href="https://github.com/goncamateus/segmentator" target="_blank" rel="noopener" class="btn btn--sm btn--outline">Código</a>
+            <a href="https://goncamateus.github.io/segmentator/" target="_blank" rel="noopener" class="btn btn--sm btn--outline">Docs</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <h2 class="section-title">Mais Projetos</h2>
     <div class="project-grid">
       <article class="project-card">
         <img src="../../assets/images/projects/dln-jax.svg" alt="DLN-jax">
@@ -41,47 +170,11 @@
       </article>
 
       <article class="project-card">
-        <img src="../../assets/images/projects/planning-path-rl.svg" alt="Planning-the-path-with-rl">
-        <div class="project-card__content">
-          <h3>Planning the Path with RL</h3>
-          <p>Estudo de Aprendizado por Reforço em planejamento de caminho e trajetória para a RoboCup Small Size League.</p>
-          <a href="https://github.com/goncamateus/Planning-the-path-with-rl" target="_blank" rel="noopener" class="btn btn--sm">Ver no GitHub</a>
-        </div>
-      </article>
-
-      <article class="project-card">
         <img src="../../assets/images/projects/booster-t1-mujoco.svg" alt="booster-t1-mjlab">
         <div class="project-card__content">
           <h3>Booster T1 MuJoCo Lab</h3>
           <p>Ambiente de simulação MuJoCo para a plataforma robótica Booster T1.</p>
           <a href="https://github.com/goncamateus/booster-t1-mjlab" target="_blank" rel="noopener" class="btn btn--sm">Ver no GitHub</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="../../assets/images/projects/dylam.svg" alt="dylam">
-        <div class="project-card__content">
-          <h3>DyLam</h3>
-          <p>Dynamic Lambda — pesquisa sobre sinais de recompensa para aprendizado por reforço multiagente.</p>
-          <a href="https://github.com/goncamateus/dylam" target="_blank" rel="noopener" class="btn btn--sm">Ver no GitHub</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="../../assets/images/projects/vs050-mujoco.svg" alt="vs050_mujoco">
-        <div class="project-card__content">
-          <h3>VS050 MuJoCo</h3>
-          <p>Ambiente Gym e suite de simulação para o braço robótico DENSO VS050 de 6 graus de liberdade com garra Robotiq 2F-85.</p>
-          <a href="https://github.com/goncamateus/vs050_mujoco" target="_blank" rel="noopener" class="btn btn--sm">Ver no GitHub</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="../../assets/images/projects/segmentator.svg" alt="segmentator">
-        <div class="project-card__content">
-          <h3>Segmentator</h3>
-          <p>Segmentação de imagens e vídeos guiada por configuração — pipelines descritos em YAML.</p>
-          <a href="https://github.com/goncamateus/segmentator" target="_blank" rel="noopener" class="btn btn--sm">Ver no GitHub</a>
         </div>
       </article>
 
